@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="jumbotron">
+        <button id="b" type="button" class="btn btn-danger btn-lg  mb-1 mt-1" name="button" (click)="reStaringGame()"> Restart ! </button>
+        <h1 *ngIf="winner" class="winner">the winner is {{winner}} </h1>
+
+    
+    </div>
+    <table align="center">
+       <tr>
+           <td   id="sq1"    (click)="squareNumber('sq1')"></td>
+           <td   id="sq2" (click)="squareNumber('sq2')"></td>
+           <td  id="sq3" (click)="squareNumber('sq3')"></td>
+       </tr>
+       <tr>
+        <td  id="sq4" (click)="squareNumber('sq4')"></td>
+        <td  id="sq5" (click)="squareNumber('sq5')"></td>
+        <td  id="sq6" (click)="squareNumber('sq6')"></td>
+    </tr>
+    <tr>
+        <td  id="sq7" (click)="squareNumber('sq7')"></td>
+        <td  id="sq8" (click)="squareNumber('sq8')"></td>
+        <td  id="sq9" (click)="squareNumber('sq9')"></td>
+    </tr>
+    </table>
+
+</div>
+
+

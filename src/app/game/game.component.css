@@ -1,0 +1,49 @@
+nav{
+    background-color: rgb(5, 5, 85);
+    text-align: center;
+    
+
+}
+h2{
+    font-size: 50px;
+    color: gray;
+
+
+}
+td{
+    height: 150px;
+    width:150px;
+    text-align: center;
+    border:5px solid black ;
+    font-size: 50px;
+    
+
+
+}
+.open{
+background-color: rgb(209, 25, 25);
+color: white;
+}
+.close{
+    display: none;
+}
+.oTurn{
+    background-color: rgb(22, 16, 16);
+    color: white;
+
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.jumbotron{
+    text-align: center;
+    height: 120px;
+}
+.winner{
+    color: rgb(34, 209, 34);
+}
+li{
+    list-style: none;
+}
