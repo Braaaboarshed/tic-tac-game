@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShearedService } from '../sheared.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +9,15 @@ import { ShearedService } from '../sheared.service';
 })
 export class HeaderComponent implements OnInit {
 user:any
-  constructor(private service:ShearedService) { }
+  constructor(private route :ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.service.displayName(this.user)
+this.route.queryParams
+.subscribe(params=>{
+  this.user = params
+  console.log(this.user)
+
+})
   }
   
 

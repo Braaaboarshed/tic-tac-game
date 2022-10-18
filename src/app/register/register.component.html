@@ -3,7 +3,7 @@
         <h3>Register</h3>
       <form   >
             <caption >Player Name</caption>
-            <input class="input" type="text" name="useName" ngModel  >
+            <input class="input" type="text" name="useName" [(ngModel)]="useName"   >
             
             <caption>Email</caption>
             <input class="input" type="email" name="email"  ngModel >
@@ -11,7 +11,7 @@
             <caption>PassWord</caption>
             <input class="input" type="password" name="password"  ngModel >
 
-            <button class="btn btn-success" value = "submit" routerLink="/game"  > submit</button> 
+            <button class="btn btn-success" value = "submit" routerLink="/game"  [queryParams]="{name: useName}" > submit</button> 
 
       </form>  
 </div>

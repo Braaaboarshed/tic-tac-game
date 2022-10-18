@@ -8,7 +8,7 @@ import { ShearedService } from '../sheared.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
+  useName :any
   constructor(private service :ShearedService) { }
 
   ngOnInit(): void {
