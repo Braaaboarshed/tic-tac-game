@@ -1,17 +1,11 @@
+<div class="p">
 
+<h3> PLAYER NAME</h3>
 <div class="container">
-        <h3>Register</h3>
-      <form   >
-            <caption >Player Name</caption>
-            <input class="input" type="text" name="useName" [(ngModel)]="useName"   >
-            
-            <caption>Email</caption>
-            <input class="input" type="email" name="email"  ngModel >
-            
-            <caption>PassWord</caption>
-            <input class="input" type="password" name="password"  ngModel >
 
-            <button class="btn btn-success" value = "submit" routerLink="/game"  [queryParams]="{name: useName}" > submit</button> 
+      <input class="input" type="text" [formControl]="username" required>
+      <p *ngIf="username.invalid && username.touched" >please enter your name to continue</p>
+      <button class="btn btn-success" [disabled]="username.invalid" value = "submit" routerLink="/game"  [queryParams]="{name: username.value}" > submit</button>
 
-      </form>  
+</div>
 </div>

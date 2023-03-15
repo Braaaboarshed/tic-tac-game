@@ -8,17 +8,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-user:any
+username:any
   constructor(private route :ActivatedRoute) { }
 
   ngOnInit(): void {
 this.route.queryParams
 .subscribe(params=>{
-  this.user = params
-  console.log(this.user)
+  this.username = params['name']
+  console.log(params)
 
 })
   }
-  
+
 
 }

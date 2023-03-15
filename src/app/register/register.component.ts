@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { ShearedService } from '../sheared.service';
 
 @Component({
@@ -8,14 +8,18 @@ import { ShearedService } from '../sheared.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  useName :any
+  name:any
+  username !: FormControl
   constructor(private service :ShearedService) { }
 
   ngOnInit(): void {
+
+
+this.username = new FormControl('',Validators.required);
   }
 
-  
-  
+
+
 
 
 }

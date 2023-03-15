@@ -1,7 +1,7 @@
 nav{
     background-color: rgb(5, 5, 85);
     text-align: center;
-    
+
 
 }
 h2{
@@ -16,7 +16,7 @@ td{
     text-align: center;
     border:5px solid black ;
     font-size: 50px;
-    
+
 
 
 }
@@ -47,3 +47,27 @@ color: white;
 li{
     list-style: none;
 }
+
+@media screen and (max-width:400px){
+
+  .table-box{
+    position: relative;
+  }
+
+  .jumbotron .btn{
+    width: 200px;
+    text-align: center;
+    margin-left: 280px;
+    font-size: 30px;
+  }
+  table{
+    position: absolute;
+    left: 25%;
+    width: 600px;
+    }
+
+
+
+}
+
+
